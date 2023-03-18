@@ -1,0 +1,51 @@
+#testimonial-area{
+    background: $bgSec;
+    padding: $paddingSm;
+    .child{
+        flex-basis: 32%;
+        transition: 0.5s;
+        &:hover{
+            background: $primaryColor;
+        }
+        .child-head{
+            display: flex;
+            justify-content: space-between;
+            i{
+                font-size: 18px;
+            }
+            .ratting{
+                i{
+                    font-size: 18px;
+                    color: orange;
+                }
+            }
+        }
+        .child-body{
+            text-align: justify;
+            margin: $marginSm;
+        }
+        .child-bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .author{
+                flex-basis: 30%;
+                img{
+                    display: block;
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            .author-info{
+                flex-basis: 60%;
+                text-align: left;
+                color: $whColor;
+                h4{
+                    font-size: 20px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    
+}

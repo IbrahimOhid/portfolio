@@ -1,0 +1,125 @@
+//medium layout:1280px
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+    #header-area .logo-area{
+        flex-basis: 25%;
+    }
+    #header-area .menu-area{
+        flex-basis: 50%;
+    }
+}
+//tablet layout:768px
+@media only screen and (min-width: 200px) and (max-width: 991px) {
+    #header-area .logo-area{
+        flex-basis: 35%;
+    }
+    #header-area .menu-area{
+        flex-basis: 50%;
+    }
+    #header-area .download-cv{
+        flex-basis: 19%;
+    }
+    #header-area .menu-area a{
+        font-size: 14px;
+        padding: 0;
+    }
+   .download-cv{
+    a.cta-btn{
+        padding: 10px 19px;
+        font-size: 13px;
+    }
+   }
+   #hero-area .info-area h1 {
+    font-size: 28px;
+    }
+    .inner .child h3 {
+    font-size: 15px;
+    }
+    #testimonial-area .child .child-bottom .author {
+    flex-basis: 50%;
+    }
+    #testimonial-area .child .child-bottom .author-info h4 {
+    font-size: 15px;
+    }
+}
+
+//mobile layout:480px
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    #header-area .container{
+        position: relative;
+    }
+    #header-area .logo-area {
+        flex-basis: 60%;
+    }
+    #header-area .download-cv {
+        flex-basis: 28%;
+    }
+    #header-area .menu-area{
+        flex-basis: 100%;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        background: $primaryColor;
+        padding: 0;
+        ul{
+            text-align: center;
+            padding-top: 5px;
+
+            li{
+                margin: 0 0.5%;
+            }
+            a{
+                color: $whColor;
+                &:hover{
+                    color: $secColor;
+                }
+            }
+            i{
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    #hero-area .info-area {
+        flex-basis: 100%;
+        order: 1;
+        margin-bottom: 15px;
+        padding: 18px 0;
+    }
+    #hero-area .inner {
+        flex-direction: column;
+    }
+    #hero-area .info-area h5{
+        margin-bottom: 0;
+    }
+    #hero-area .info-area h1 {
+        margin-bottom: 0;
+    }
+    #hero-area .info-area h6 {
+        font-size: 15px;
+    }
+    #service-area{
+        .inner {
+            flex-direction: column;
+            .child{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    #portfolio-area .inner .portfolio {
+        flex-basis: 48%;
+    }
+    #testimonial-area{
+        .inner {
+            flex-direction: column;
+            .child{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    #footer-area{
+        margin-bottom: 55px;
+    }
+}
+

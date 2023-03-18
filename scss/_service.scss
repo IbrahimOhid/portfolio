@@ -1,0 +1,15 @@
+#service-area{
+    background: $bgSec;
+    padding: $paddingSm;
+    .child{
+        flex-basis: 32%;
+        transition: 0.5s;
+        &:hover{
+            background: $primaryColor;
+            i{
+                color: $childBg;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,52 @@
+#header-area{
+    width: 100%;
+    background: $bgColor;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 0 10px #2d244b;
+    .inner{
+        align-items: center;
+    }
+    .logo-area{
+        flex-basis: 35%;
+        padding: $paddingSm;
+        h1{
+            margin: 0;
+        }
+        a{
+            color: $whColor;
+            &:hover{
+                color: $primaryColor;
+            }
+        }
+    }
+    .menu-area{
+        flex-basis: 45%;
+        ul{
+            text-align: right;
+        }
+            li{
+                margin-left: 15px;
+            }
+            a{
+                color: $whColor;
+                display: block;
+                padding: 5px 10px;
+                font: {
+                    size: 15px;
+                    weight: 600;
+                }
+                
+                &:hover{
+                    color: $primaryColor;
+                }
+            }
+            i{
+                display: none;
+            }
+            .download-cv{
+                flex-basis:20% ;
+            }
+    }
+}

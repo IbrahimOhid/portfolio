@@ -1,0 +1,114 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$primaryColor: #9980fa;
+$secColor: #341f97;
+$bgColor: #191421;
+$bgSec: #171c23;
+$childBg: #21272f;
+$bkColor: #262626;
+$whColor: #ffffff;
+$marginSm: 0 0 15px;
+$paddingSm: 15px 0;
+$paddingLg: 50px;
+$primaryFont: 'Poppins', sans-serif;
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font: {
+        size: 16px;
+        family: $primaryFont;
+        weight: 300;
+    }
+    h1, h2, h3, h4, h5, h6{
+        font: {
+            family: $primaryFont;
+            weight: 600;
+            margin: $marginSm;
+        }
+    }
+    p{
+        font-weight: 300;
+        margin: $marginSm;
+    }
+    .ul{
+        list-style: none;
+        li{
+            display: inline-block;
+        }
+    }
+    a{
+        transition: 0.5s;
+        text-decoration: none;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    .container{
+        max-width: 1270px;
+        width: 96%;
+        margin: 0 auto;
+    }
+    .inner{
+        display: flex;
+        justify-content: space-between;
+        .child{
+            background: $childBg;
+            padding: 25px;
+            border-radius: 25px;
+            text-align: center;
+            color: $whColor;
+            i{
+                font-size: 70px;
+                color: $primaryColor;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 14px;
+                margin: 0;
+            }
+        }
+    }
+    a.cta-btn{
+        background: $primaryColor;
+        color: $whColor;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font: {
+                    size: 15px;
+                    weight: 600;
+                }
+        &:hover{
+            background: $secColor;
+        }
+    }
+    .title{
+        text-align: center;
+        margin-bottom: 25px;
+        h2{
+            color: $whColor;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font: {
+                size: 35px;
+            }
+        }
+        h4{
+            color: $whColor;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font: {
+                size: 18px;
+            }
+        }
+    }
+}
